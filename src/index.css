@@ -27,6 +27,71 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+form.sign-in-form {
+  z-index: 2;
+}
+
+form.sign-up-form {
+  z-index: 1;
+  opacity: 0;
+}
+.right-panel .info {
+  transform: translateX(800px);
+}
+
+.content.sign-up-mode:before {
+  transform: translate(100%, -50%);
+  right: 52%;
+}
+
+.content.sign-up-mode .left-panel .info {
+  transform: translateX(-800px);
+}
+.content.sign-up-mode .right-panel .info {
+  transform: translateX(0px);
+}
+.content.sign-up-mode .left-panel {
+  pointer-events: none;
+}
+.content.sign-up-mode .right-panel {
+  pointer-events: all;
+}
+.content.sign-up-mode .singin-singup {
+  left: 25%;
+}
+.content.sign-up-mode form.sign-in-form {
+  z-index: 1;
+  opacity: 0;
+}
+.content.sign-up-mode form.sign-up-form {
+  z-index: 2;
+  opacity: 1;
+}
+
+/* Responsive Login form styling */
+@media screen and (max-width: 990px) {
+  .right-panel .info {
+    transform: translateY(300px);
+  }
+  .content.sign-up-mode:before {
+    transform: translate(-50%, 100%);
+    bottom: 30%;
+    right: initial;
+  }
+
+  .content.sign-up-mode .left-panel .info {
+    transform: translateY(-300px);
+  }
+  .content.sign-up-mode .singin-singup {
+    top: 5%;
+    transform: translate(-50%, 0);
+    left: 50%;
+  }
+}
+
+
+/*Responsive  NavBar styling */
+
 @media screen and (max-width: 850px) {
   .menu-btn .bx-x {
     display: none;

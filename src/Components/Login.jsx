@@ -416,7 +416,7 @@ const Info = styled.div`
     font-weight: 600;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 12px;
     padding: 0.7rem 0;
   }

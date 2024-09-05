@@ -1,9 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import React, { useState } from 'react';
+import Search from './Search';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -13,7 +15,12 @@ const Header = () => {
     setMenuOpen(false);
   };
 
+  const toggleSearch = () => {
+    setSearchOpen(!searchOpen); 
+  };
+
   return (
+    <>
     <Container>
       <Content>
         <input type="checkbox" id="click" checked={menuOpen} readOnly />
@@ -48,7 +55,7 @@ const Header = () => {
           <Right>
             <ul>
               <li>
-                <a href="#">
+                <a href="#" onClick={toggleSearch}>
                   <i className="bx bx-search"></i>
                 </a>
                 <a href="/login" className="login">
@@ -63,6 +70,8 @@ const Header = () => {
         </NavLinks>
       </Content>
     </Container>
+    {searchOpen && <Search searchOpen={searchOpen} setSearchOpen={setSearchOpen} /> }
+    </>
   );
 };
 

@@ -7,6 +7,7 @@ import Login from './Components/Login';
 import Catlog from './Components/Catlog';
 import Contact from './Components/Contact';
 import Cart from './Components/Cart';
+import Search from './Components/Search';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/catlog" element={<Catlog />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/search" element={<Search />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer />

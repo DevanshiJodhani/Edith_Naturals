@@ -10,23 +10,25 @@ const Footer = () => {
           <i class="bx bx-right-arrow-alt"></i>
         </Email>
       </Content>
+      <Center>
+        <a href="">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="">
+          <i class="bx bxl-facebook-square"></i>
+        </a>
+        <a href="">
+        <i class='bx bxl-twitter' ></i>
+        </a>
+        <a href="">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+        <a href="">
+          <i class="bx bxl-youtube"></i>
+        </a>
+      </Center>
       <Bottom>
-        <p>&copy; 2024, Edith Naturals</p>
-        <ul>
-          <li>
-            <a href="#">Catlog</a>
-          </li>
-
-          <li>
-            <a href="#">Terms of service</a>
-          </li>
-          <li>
-            <a href="#">Contact information</a>
-          </li>
-          <li>
-            <a href="#">Shipping policy</a>
-          </li>
-        </ul>
+        <p> Cpoyright &copy; 2024, by Edith Naturals | All Rights Reserved.</p>
       </Bottom>
     </Container>
   );
@@ -75,8 +77,8 @@ const Email = styled.div`
     font-size: 16px;
     color: #fff;
 
-    &::placeholder{
-        color: #f5f5f5;
+    &::placeholder {
+      color: #f5f5f5;
     }
   }
 
@@ -88,6 +90,40 @@ const Email = styled.div`
 
   &:hover {
     border: 2px solid #aaa;
+  }
+`;
+
+const Center = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+
+  a {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    a{
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+    }
   }
 `;
 

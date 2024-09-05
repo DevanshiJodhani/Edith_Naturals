@@ -115,7 +115,7 @@ const FeaturedProduct = () => {
           </Box>
         </ProductBox>
         <Btn>
-            <a href="#">View All</a>
+            <a href="/catlog">View All</a>
         </Btn>
       </Content>
     </Container>

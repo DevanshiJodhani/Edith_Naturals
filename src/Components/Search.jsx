@@ -73,6 +73,11 @@ const CloseButton = styled.div`
   font-size: 50px;
   color: #aaa;
   cursor: pointer;
+
+  @media screen and (max-width: 600px) {
+    font-size: 35px;
+    right: 20px;
+  }
 `;
 
 const InputField = styled.div`
@@ -91,6 +96,12 @@ const InputField = styled.div`
     font-size: 35px;
     color: #000;
     font-weight: 900;
+  }
+
+  @media screen and (max-width: 600px) {
+    input{
+      font-size: 20px;
+    }
   }
 `;
 
